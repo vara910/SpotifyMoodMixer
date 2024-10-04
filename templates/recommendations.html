@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles.css">
+    <title>Your Recommendations</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Your Recommendations</h1>
+        <ul>
+            {% for track in results %}
+                <li>
+                    <a href="{{ track.link }}" target="_blank">{{ track.title }} by {{ track.artist }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+        <a href="/" class="back-button">Back</a>
+    </div>
+</body>
+</html>

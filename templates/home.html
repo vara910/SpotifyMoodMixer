@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles.css">
+    <title>Music Recommender</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Music Recommender</h1>
+        <p>Get personalized music recommendations based on your mood.</p>
+        <form action="/recommend" method="post">
+            <select name="mood" required>
+                <option value="">Select Mood</option>
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="energetic">Energetic</option>
+                <option value="relaxed">Relaxed</option>
+            </select>
+            <button type="submit" class="start-button">Get Recommendations</button>
+        </form>
+        <a href="/login" class="login-button">Login to Spotify</a>
+    </div>
+</body>
+</html>
